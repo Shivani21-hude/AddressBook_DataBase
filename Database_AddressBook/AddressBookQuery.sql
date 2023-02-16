@@ -31,3 +31,6 @@ update AddressBookTable set City='pune' where Firstname='Shree'
 update AddressBookTable set Zipcode=429017 where Firstname='Sai'
 
 select * from AddressBookTable
+
+--Uc5
+delete from AddressBookTable where Firstname='Sai'
