@@ -66,3 +66,8 @@ update AddressBookTable set Type='Profession' where Firstname='Mehek'
 --Uc10 to get number of contact person i.e Count by type
 
 select count(*) as Numberof_contacts,Type from AddressBookTable group by Type
+
+--Uc11 Ability to add person to both friend and family
+
+insert into AddressBookTable values('vrutik','pethe','wardha','wardha','maharashtra',442099,9922946902,'vrutik@gmail.com','Friend'),
+('dyanesha','gujar','delhi','delhi','UP',442099,9922946902,'dyanesha@gmail.com','Family')
