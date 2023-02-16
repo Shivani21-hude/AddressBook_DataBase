@@ -44,3 +44,7 @@ delete from AddressBookTable where Firstname='Sai'
 
 select * from AddressBookTable where city='pune' and state='Maharashtra'
 
+--Uc7 Size of Address Book
+
+select count(*) as Sizeof_AddressBook from AddressBookTable
+
