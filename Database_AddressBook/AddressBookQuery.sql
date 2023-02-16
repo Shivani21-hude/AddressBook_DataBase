@@ -51,3 +51,10 @@ select count(*) as Sizeof_AddressBook from AddressBookTable
 --Uc8 Sorting alphabetically by person's name for a city
 
 select * from AddressBookTable where city='Pune' order by Firstname
+
+--Uc9 create a column as type and add types
+
+alter table AddressBookTable add Type varchar(100)
+update AddressBookTable set Type='Friend' where Firstname='Shivani'
+update AddressBookTable set Type='Profession' where Firstname='Sam'
+update AddressBookTable set Type='Family' where Firstname='Shree'
