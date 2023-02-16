@@ -48,3 +48,6 @@ select * from AddressBookTable where city='pune' and state='Maharashtra'
 
 select count(*) as Sizeof_AddressBook from AddressBookTable
 
+--Uc8 Sorting alphabetically by person's name for a city
+
+select * from AddressBookTable where city='Pune' order by Firstname
