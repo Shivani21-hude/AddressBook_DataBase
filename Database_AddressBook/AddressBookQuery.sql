@@ -27,6 +27,8 @@ insert into AddressBookTable values ('Shivani','Hude','Wardha','Wardha','Maharas
 ('Shree','bhat','mumbai','mumbai','Maharashtra',446789,9852158903,'shree@gmail.com'),
 ('Sam','oza','mumbai','mumbai','Maharashtra',568909,8935660923,'sam@gmail.com'),
 ('Sai','shukla','pune','pune','Maharashtra',424976,9788221883,'sai@gmail.com')
+insert into AddressBookTable values ('Vir','Mehra','Wardha','Wardha','Maharashtrsa',442001,7532245797,'vir@gmail.com'),
+('Mehek','Sono','nagpur','nagpur','Maharashtrsa',672315,8654321906,'mehek@gmail.com')
 
 --Uc4 edit contact using person's name
 
@@ -58,3 +60,9 @@ alter table AddressBookTable add Type varchar(100)
 update AddressBookTable set Type='Friend' where Firstname='Shivani'
 update AddressBookTable set Type='Profession' where Firstname='Sam'
 update AddressBookTable set Type='Family' where Firstname='Shree'
+update AddressBookTable set Type='Friend' where Firstname='Vir'
+update AddressBookTable set Type='Profession' where Firstname='Mehek'
+
+--Uc10 to get number of contact person i.e Count by type
+
+select count(*) as Numberof_contacts,Type from AddressBookTable group by Type
