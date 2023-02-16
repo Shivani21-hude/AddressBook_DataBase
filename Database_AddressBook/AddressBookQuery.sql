@@ -25,3 +25,9 @@ insert into AddressBookTable values ('Shivani','Hude','Wardha','Wardha','Maharas
 ('Shree','bhat','mumbai','mumbai','Maharashtra',446789,9852158903,'shree@gmail.com'),
 ('Sam','oza','mumbai','mumbai','Maharashtra',568909,8935660923,'sam@gmail.com'),
 ('Sai','shukla','pune','pune','Maharashtra',424976,9788221883,'sai@gmail.com')
+
+--Uc4
+update AddressBookTable set City='pune' where Firstname='Shree'
+update AddressBookTable set Zipcode=429017 where Firstname='Sai'
+
+select * from AddressBookTable
